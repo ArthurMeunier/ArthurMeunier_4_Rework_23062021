@@ -713,6 +713,7 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    padding: 20px 0px 5px 0px;
 }
 
 h2 {
@@ -836,6 +837,53 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
+
+.keywords {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footertitle {
+  font-size: 14px;
+  color: #575757!important;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote__sentence {
+  width: 68%;
+  font-style: italic;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.quote__author {
+  font-size:smaller;
+}
+
+.ourwork {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourwork__text {
+  font-size: x-large;
+  text-transform: none;
+  font-weight: 500;
+  color: #575757!important;
+  width: 50%;
+}
+
+.text-bigger {
+  font-size:1.5rem;
+}
+
 
 @media (max-width: 1024px) {
     .bloc {
@@ -1044,10 +1092,39 @@ h4 {
       justify-content: center;
     }
     .bloc-lg img {
-      width: 320px;
-      height: 320px;
+      width: 90px;
+      height: 90px;
     }
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    a[data-lightbox]:hover::before {
+      content: "+";
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+      font-size: 30px;
+      width: 50px;
+      height: 50px;
+      margin-left: 0px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, .6);
+      color: #FFF;
+      font-weight: 100;
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+  }
+  
+  a[data-lightbox]:hover img {
+      opacity: 0.6;
+      -webkit-animation-fill-mode: none;
+      animation-fill-mode: none;
+  }
 }
+
 
 @media (max-width: 400px) {
     .bloc {
