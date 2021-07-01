@@ -302,8 +302,8 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 386px;
+    max-height: 72px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -840,7 +840,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 .keywords {
@@ -1098,8 +1098,8 @@ h4 {
       justify-content: center;
     }
     .bloc-lg img {
-      width: 220px;
-      height: 220px;
+      width: 125px;
+      height: 125px;
     }
     .social {
       display: flex;
